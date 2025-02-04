@@ -1,0 +1,42 @@
+{
+  "id": "00634ae6-5617-4cbc-b53e-f947add39bdc",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "\"Hey there! 👋 I\u0027m INSIGHT, here to keep you updated on trendy fashion and colors. How can I assist you today? Feel free to ask me about anything!\"",
+            "\"Hello! 🌟 Welcome to INSIGHT, your fashion-savvy assistant. Curious about trendy fashion, classy colors, or stylish combinations? Ask away!\"",
+            "\"Hi! 🌺 I\u0027m INSIGHT, your guide to all things trendy and stylish. What do you want to know about fashionable colors, combinations, or anything else in fashion?\"",
+            "\"Hey there! 💃 It\u0027s INSIGHT, your go-to for fashion inspiration and advice. Interested in trendy colors, classy combinations, or any fashion queries? Ask me!\""
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

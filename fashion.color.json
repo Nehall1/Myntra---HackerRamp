@@ -1,0 +1,36 @@
+{
+  "id": "3651c91a-ddda-4afa-b8e2-22af924193ad",
+  "name": "fashion.color",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Bold colors such as fiery red and mustard yellow are popular. For a softer look, try blush pink or lavender.\"",
+            "Bold colors such as fiery red and mustard yellow are popular. For a softer look, try blush pink or lavender.\""
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "d64c883f-c1ad-430f-95bb-8de022fcab35",
+  "name": "fashion.clothes1",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "For a summer party, a sundress in vibrant colors like coral, turquoise, or sunny yellow would be perfect. These shades complement floral prints beautifully and create a cheerful, chic look."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

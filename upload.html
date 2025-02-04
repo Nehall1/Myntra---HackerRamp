@@ -1,0 +1,543 @@
+
+<!-- <h1>nehal image upload</h1> -->
+
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Contest Vibe</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffe4e6;
+      color: #343a40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  
+    .container {
+      display: flex;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 80%;
+      max-width: 1000px;
+      margin: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .left-section, .right-section {
+      flex: 1;
+      padding: 20px;
+    }
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffb3c1;
+    }
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .upload-section button, .comments-section button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+    .upload-section button:hover, .comments-section button:hover {
+      transform: scale(1.05);
+    }
+    .recommendations-section ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .recommendations-section li {
+      background-color: #fff0f3;
+      padding: 10px;
+      border-radius: 5px;
+      transition: transform 0.3s;
+      flex: 1 0 48%; 
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px; 
+    }
+    .recommendations-section li:hover {
+      transform: translateX(10px);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ffccd5;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="left-section">
+      <input type="file" id="imageUpload" accept="image/*">
+      <div id="imageContainer"></div>
+    </div>
+    <div class="right-section">
+      <section class="comments-section">
+        <input type="text" id="name" placeholder="Your Name">
+        <textarea id="comment" placeholder="Your Comment"></textarea>
+        <button onclick="postComment()">Post Comment</button>
+      </section>
+      <section class="recommendations-section">
+        <h2>Recommended Clothes⟳⌛</h2>
+        <ul>
+         
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    function postComment() {
+      alert('Comment Posted!');
+    }
+
+    document.getElementById('imageUpload').addEventListener('change', function() {
+      const reader = new FileReader();
+      reader.onload = function() {
+        const img = document.createElement('img');
+        img.src = reader.result;
+        img.style.maxWidth = '100%';
+        img.style.borderRadius = '10px';
+        img.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+        img.style.marginTop = '10px';
+        document.getElementById('imageContainer').appendChild(img);
+        document.getElementById('imageUpload').style.display = 'none'; 
+      }
+      reader.readAsDataURL(this.files[0]);
+    });
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>nehal image recomondation upload</h1> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Contest Vibe</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffe4e6;
+      color: #343a40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  
+    .container {
+      display: flex;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 80%;
+      max-width: 1000px;
+      margin: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .left-section, .right-section {
+      flex: 1;
+      padding: 20px;
+    }
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffb3c1;
+    }
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .upload-section button, .comments-section button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+    .upload-section button:hover, .comments-section button:hover {
+      transform: scale(1.05);
+    }
+    .recommendations-section ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .recommendations-section li {
+      background-color: #ffffff;
+      padding: 0px;
+      border-radius: 5px;
+      transition: transform 0.3s;
+      flex: 1 0 48%; 
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:70%; 
+      width:70%; 
+    }
+    .recommendations-section li:hover {
+      transform: translateX(10px);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ffccd5;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="left-section">
+      <input type="file" id="imageUpload" accept="image/*">
+      <div id="imageContainer"></div>
+    </div>
+    <div class="right-section">
+      <section class="comments-section">
+        <input type="text" id="name" placeholder="Your Name">
+        <textarea id="comment" placeholder="Your Comment"></textarea>
+        
+      </section>
+      <section class="recommendations-section">
+        <h2>Recommended Clothes </h2>
+        <ul>
+          <li><img src="myimg/WhatsApp Image 2024-07-14 at 17.48.08_3ef6451a.jpg" alt="Clothing Item 1"></li>
+          <li><img src="myimg/WhatsApp Image 2024-07-14 at 17.48.09_0142c656.jpg" alt="Clothing Item 2"></li>
+          <li><img src="myimg/WhatsApp Image 2024-07-14 at 17.48.09_c8aebdfc.jpg" alt="Clothing Item 3"></li>
+          <li><img src="myimg/WhatsApp Image 2024-07-14 at 17.48.10_5de5007e.jpg" alt="Clothing Item 4"></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    function postComment() {
+      alert('Comment Posted!');
+    }
+
+    document.getElementById('imageUpload').addEventListener('change', function() {
+      const reader = new FileReader();
+      reader.onload = function() {
+        const img = document.createElement('img');
+        img.src = reader.result;
+        img.style.maxWidth = '100%';
+        img.style.borderRadius = '10px';
+        img.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+        img.style.marginTop = '10px';
+        document.getElementById('imageContainer').appendChild(img);
+        document.getElementById('imageUpload').style.display = 'none'; 
+      }
+      reader.readAsDataURL(this.files[0]);
+    });
+  </script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>random image upload</h1> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Contest Vibe</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffe4e6;
+      color: #343a40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  
+    .container {
+      display: flex;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 80%;
+      max-width: 1000px;
+      margin: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .left-section, .right-section {
+      flex: 1;
+      padding: 20px;
+    }
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffb3c1;
+    }
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .upload-section button, .comments-section button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+    .upload-section button:hover, .comments-section button:hover {
+      transform: scale(1.05);
+    }
+    .recommendations-section ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .recommendations-section li {
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 5px;
+      transition: transform 0.3s;
+      flex: 1 0 48%; 
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:70%; 
+      width:70%; 
+    }
+    .recommendations-section li:hover {
+      transform: translateX(10px);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ffccd5;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="left-section">
+      <input type="file" id="imageUpload" accept="image/*">
+      <div id="imageContainer"></div>
+    </div>
+    <div class="right-section">
+      <section class="comments-section">
+        <input type="text" id="name" placeholder="Your Name">
+        <textarea id="comment" placeholder="Your Comment"></textarea>
+       
+      </section>
+      <section class="recommendations-section">
+        <h2>Recommended Clothes</h2>
+        <ul>
+          <li><img src="myimg/WhatsApp Image 2024-07-14 at 17.43.34_c898399d.jpg" alt="Clothing Item 1"></li>
+          <li><img src="myimg/WhatsApp Image 2024-07-14 at 17.44.08_5f83b601.jpg" alt="Clothing Item 2"></li>
+          <li><img src="myimg/WhatsApp Image 2024-07-14 at 17.45.15_99e5ac07.jpg" alt="Clothing Item 3"></li>
+          <li><img src="myimg/WhatsApp Image 2024-07-14 at 17.45.31_2bef59fa.jpg" alt="Clothing Item 4"></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    function postComment() {
+      alert('Comment Posted!');
+    }
+
+    document.getElementById('imageUpload').addEventListener('change', function() {
+      const reader = new FileReader();
+      reader.onload = function() {
+        const img = document.createElement('img');
+        img.src = reader.result;
+        img.style.maxWidth = '100%';
+        img.style.borderRadius = '10px';
+        img.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+        img.style.marginTop = '10px';
+        document.getElementById('imageContainer').appendChild(img);
+        document.getElementById('imageUpload').style.display = 'none'; 
+      }
+      reader.readAsDataURL(this.files[0]);
+    });
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

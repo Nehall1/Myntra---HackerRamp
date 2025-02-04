@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Quiz Contest</title>
+    <link rel="stylesheet" href="abcde.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="animated-heading">Fashion Quiz Contest</h1>
+        </header>
+        <main>
+            <section id="quiz">
+            </section>
+            <section id="result" style="display: none;">
+                <p id="resultText"></p>
+                
+                <div id="spinWheel" style="display: none;">
+                    <canvas id="wheelCanvas" width="300" height="300"></canvas>
+                    <button onclick="spin()">Spin the Wheel</button>
+                    <p id="prizeText"></p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="abcde.js"></script>
+</body>
+</html>
